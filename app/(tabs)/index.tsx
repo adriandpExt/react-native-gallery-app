@@ -58,15 +58,15 @@ export default function Index() {
     }
   };
 
-  const onReset = () => {
+  const onReset = (): void => {
     setShowAppOptions(false);
   };
 
-  const onAddSticker = () => {
+  const onAddSticker = (): void => {
     setIsModalVisible(true);
   };
 
-  const onModalClose = () => {
+  const onModalClose = (): void => {
     setIsModalVisible(false);
   };
 
@@ -147,7 +147,7 @@ export default function Index() {
         </EmojiPicker>
       </GestureHandlerRootView>
 
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
     </>
   );
 }
